@@ -1,5 +1,5 @@
 import React, { FC, Suspense } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ErrorBoundary } from 'react-error-boundary';
 import { store } from './store';
@@ -52,11 +52,11 @@ const AppContainer: FC = () => {
 
 const App: FC = () => {
   return (
-    <BrowserRouter basename={window.location.pathname || ''}>
+    <HashRouter>
       <Provider store={store}>
         <AppContainer />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
