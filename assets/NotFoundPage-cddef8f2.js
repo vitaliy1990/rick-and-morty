@@ -1,0 +1,1 @@
+import{r as e,g as n,j as s}from"./index-a4095dc6.js";const r="_root_4l4z8_1",a={root:r},c=()=>{const{state:o}=n(),t=o==null?void 0:o.message;return s.jsxs("div",{className:a.root,children:[s.jsx("h1",{children:"404 Page not found"}),t&&s.jsx("p",{children:t})]})},i=e.memo(c);export{i as default};
