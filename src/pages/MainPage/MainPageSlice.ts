@@ -146,6 +146,8 @@ export const fetchCharactersByFilter = createAsyncThunk('product/fetchCharacters
         // eslint-disable-next-line no-restricted-syntax
         for (const [key, value] of character) {
           if (!isValid) return false;
+          // eslint-disable-next-line no-restricted-syntax, @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           isValid = item[key as keyof CharacterSearchValues]?.toLowerCase().includes(value.toLowerCase());
         }
 

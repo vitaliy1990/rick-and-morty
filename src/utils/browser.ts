@@ -5,6 +5,8 @@ export const setSearchDataInLocalStorage = (filterData: FilterDataObject) => {
   Object.entries(filterData).forEach((item: [string, string][]) => {
     const valueJSON = JSON.stringify(item[1]);
     const key = item[0];
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore eslint-disable-next-line
     localStorage.setItem(key, valueJSON);
   });
 };
